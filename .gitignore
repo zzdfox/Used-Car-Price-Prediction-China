@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+
+# Competition raw data (86MB, downloaded from Tianchi)
+data/
+
+# Intermediate model prediction artifacts (npz files are large; regenerable via src/main.py)
+user_data/*.npz
+
+# Submission files
+prediction_result/
+user_data/*.done

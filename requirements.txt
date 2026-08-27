@@ -1,0 +1,19 @@
+# Used-car price prediction -- runtime environment for src/
+# Tested environment: macOS (Darwin 25.6.0, Apple Silicon) / Python 3.12.4
+#
+# Direct dependencies of src/:
+#   fe.py      -> numpy, pandas
+#   te.py      -> numpy, pandas, scikit-learn (KFold)
+#   trainer.py -> numpy, pandas, scikit-learn, lightgbm / catboost / xgboost
+#   exp1.py    -> all of the above
+# tensorflow is no longer needed (its only user, model.py, moved to legacy/;
+# the old environment is defined in legacy/requirements-legacy.txt)
+
+numpy==2.5.2
+pandas==3.0.5
+scipy==1.18.0
+scikit-learn==1.9.0
+
+lightgbm==4.7.0
+catboost==1.2.10
+xgboost==3.4.1
